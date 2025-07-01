@@ -1,10 +1,11 @@
 body {
 font-family: 'Montserrat', sans-serif;
 margin: 0;
-background: #f5fafa;
-color: #333;
+background: #fdfdfd;
+color: #2b2b2b;
 }
 
+/* Hero Section */
 .hero {
 background: url('../assets/images/tenerife-header.jpg') no-repeat center;
 background-size: cover;
@@ -13,34 +14,59 @@ padding: 5rem 2rem;
 text-align: center;
 }
 
-.container {
-max-width: 960px;
-margin: auto;
-padding: 1rem;
-}
-
+/* Botones de WhatsApp */
 .btn-whatsapp {
 display: inline-block;
 background-color: #25D366;
 color: white;
-padding: 0.9rem 1.5rem;
-border-radius: 5px;
+padding: 1rem 1.6rem;
+border-radius: 8px;
 font-weight: bold;
 text-decoration: none;
+font-size: 1rem;
 transition: background 0.3s ease;
+box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 .btn-whatsapp:hover {
 background-color: #1ebe57;
 }
 
-.experiences, .info {
-padding: 2rem 1rem;
-text-align: center;
+/* Botón flotante */
+.floating-whatsapp {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #25D366;
+color: white;
+padding: 0.9rem 1.1rem;
+border-radius: 50px;
+font-size: 1.4rem;
+text-decoration: none;
+box-shadow: 0 0 12px rgba(0,0,0,0.2);
+z-index: 999;
+}
+.floating-whatsapp:hover {
+background-color: #1ebe57;
 }
 
+/* Secciones */
+.experiences, .info {
+padding: 3rem 1.5rem;
+text-align: center;
+background-color: #e6fffa;
+}
+
+h2 {
+color: #00cfc1;
+}
+ul li {
+margin: 1rem 0;
+}
+
+/* Footer */
 footer {
-background: #222;
+background: #2b2b2b;
 color: #aaa;
-padding: 1rem 0;
+padding: 1.5rem 0;
 text-align: center;
 }
