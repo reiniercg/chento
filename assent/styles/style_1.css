@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #af8686;
+  background: #fdfdfd;
   margin: 0;
   color: #2b2b2b;
 }
@@ -11,6 +11,29 @@ body {
   padding: 4rem 2rem;
   text-align: center;
 }
+.logo {
+  width: 150px;
+  max-width: 90%;
+  margin-bottom: 1rem;
+  border-radius: 12px; /* 🔄 Esquinas redondeadas */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25); /* 🌫️ Sombra suave */
+  transition: transform 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.05);
+}
+@media (min-width: 768px) {
+  .logo {
+    width: 180px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 180px;
+  }
+}
+
 .container {
   max-width: 960px;
   margin: auto;
@@ -18,7 +41,7 @@ body {
 
 section {
   padding: 3rem 1.5rem;
-  max-width: 1100px;
+  
   margin: auto;
 }
 
@@ -28,11 +51,46 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+
+
+
+.excursiones-listado {
+  width: 100%; /* ocupa todo el ancho */
+  padding: 3rem 2rem; /* igual que el header */
+  background: #aec9db; /* o una imagen/degradado si quieres */
+  box-sizing: border-box; /* 🔒 asegura que padding no rompa nada */
+  margin: 0; /* evita márgenes raros heredados */
+}
+
+
+.excursiones-listado h2 {
+  text-align: center;
+  color: #2b2b2b;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.excursiones-listado ul {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.excursiones-listado li {
+  margin: 0.6rem 0;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+
 ul {
   list-style: none;
   padding-left: 0;
-  columns: 2;
+  columns: 1;
   font-size: 1.05rem;
+  
 }
 ul li {
   margin-bottom: 0.7rem;
