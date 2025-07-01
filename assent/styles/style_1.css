@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7fdfc;
+  color: #222;
+}
+
+header {
+  background-image: url('../assets/images/playa-fondo.jpg');
+  background-size: cover;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.cta {
+  background: #ff9900;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+section {
+  padding: 2rem;
+}
+
+form input, form button {
+  display: block;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  width: 100%;
+}
