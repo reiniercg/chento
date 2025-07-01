@@ -52,8 +52,6 @@ h2 {
 }
 
 
-
-
 .excursiones-listado {
   width: 100%; /* ocupa todo el ancho */
   padding: 3rem 2rem; /* igual que el header */
@@ -103,7 +101,7 @@ ul li {
 }
 
 .card {
-  background: white;
+  background-color: #ffb400;
   border-radius: 10px;
   box-shadow: 0 0 12px rgba(0,0,0,0.08);
   overflow: hidden;
