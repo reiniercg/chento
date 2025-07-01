@@ -1,33 +1,46 @@
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f7fdfc;
-  color: #222;
+font-family: 'Montserrat', sans-serif;
+margin: 0;
+background: #f5fafa;
+color: #333;
 }
 
-header {
-  background-image: url('../assets/images/playa-fondo.jpg');
-  background-size: cover;
-  color: white;
-  padding: 4rem 2rem;
-  text-align: center;
+.hero {
+background: url('../assets/images/tenerife-header.jpg') no-repeat center;
+background-size: cover;
+color: white;
+padding: 5rem 2rem;
+text-align: center;
 }
 
-.cta {
-  background: #ff9900;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  border-radius: 5px;
+.container {
+max-width: 960px;
+margin: auto;
+padding: 1rem;
 }
 
-section {
-  padding: 2rem;
+.btn-whatsapp {
+display: inline-block;
+background-color: #25D366;
+color: white;
+padding: 0.9rem 1.5rem;
+border-radius: 5px;
+font-weight: bold;
+text-decoration: none;
+transition: background 0.3s ease;
+}
+.btn-whatsapp:hover {
+background-color: #1ebe57;
 }
 
-form input, form button {
-  display: block;
-  margin: 1rem 0;
-  padding: 0.75rem;
-  width: 100%;
+.experiences, .info {
+padding: 2rem 1rem;
+text-align: center;
+}
+
+footer {
+background: #222;
+color: #aaa;
+padding: 1rem 0;
+text-align: center;
 }
