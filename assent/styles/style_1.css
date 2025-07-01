@@ -5,68 +5,99 @@ background: #fdfdfd;
 color: #2b2b2b;
 }
 
-/* Hero Section */
-.hero {
-background: url('../assets/images/tenerife-header.jpg') no-repeat center;
+/* Hero con efecto parallax */
+.hero-parallax {
+background-image: url('../assets/images/idea-marine-hero.jpg');
+background-attachment: fixed;
 background-size: cover;
-color: white;
-padding: 5rem 2rem;
+background-position: center;
+height: 85vh;
+display: flex;
+align-items: center;
+justify-content: center;
 text-align: center;
+position: relative;
+color: white;
+}
+.hero-parallax .overlay {
+background: rgba(0, 0, 0, 0.5);
+padding: 2rem;
+border-radius: 12px;
 }
 
-/* Botones de WhatsApp */
+/* Botón principal */
 .btn-whatsapp {
-display: inline-block;
 background-color: #25D366;
 color: white;
-padding: 1rem 1.6rem;
+padding: 1rem 1.8rem;
 border-radius: 8px;
 font-weight: bold;
 text-decoration: none;
 font-size: 1rem;
-transition: background 0.3s ease;
+display: inline-block;
+margin-top: 1.2rem;
 box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+transition: background 0.3s ease-in-out;
 }
 .btn-whatsapp:hover {
 background-color: #1ebe57;
 }
 
-/* Botón flotante */
-.floating-whatsapp {
-position: fixed;
-bottom: 20px;
-right: 20px;
-background-color: #25D366;
-color: white;
-padding: 0.9rem 1.1rem;
-border-radius: 50px;
-font-size: 1.4rem;
-text-decoration: none;
-box-shadow: 0 0 12px rgba(0,0,0,0.2);
-z-index: 999;
-}
-.floating-whatsapp:hover {
-background-color: #1ebe57;
-}
-
 /* Secciones */
-.experiences, .info {
+section {
 padding: 3rem 1.5rem;
 text-align: center;
+}
+.boat-features {
 background-color: #e6fffa;
 }
-
+.location {
+background-color: #fff8e0;
+}
 h2 {
 color: #00cfc1;
 }
 ul li {
 margin: 1rem 0;
+list-style: none;
+font-size: 1.1rem;
 }
 
 /* Footer */
 footer {
-background: #2b2b2b;
-color: #aaa;
-padding: 1.5rem 0;
+background-color: #2b2b2b;
+color: #ddd;
+padding: 2rem 0;
 text-align: center;
+}
+
+/* Botón flotante de WhatsApp */
+.floating-whatsapp {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #00cfc1;
+color: white;
+padding: 0.9rem 1.2rem;
+border-radius: 50px;
+font-size: 1rem;
+font-weight: bold;
+text-decoration: none;
+box-shadow: 0 0 12px rgba(0,0,0,0.25);
+z-index: 999;
+transition: background-color 0.3s ease-in-out;
+}
+.floating-whatsapp:hover {
+background-color: #00b2a7;
+}
+
+/* Animaciones suaves */
+.oculto {
+opacity: 0;
+transform: translateY(30px);
+transition: all 0.6s ease-out;
+}
+.visible {
+opacity: 1;
+transform: translateY(0);
 }
